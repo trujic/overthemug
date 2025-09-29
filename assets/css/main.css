@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container-wide {
+    @apply max-w-[1540px] m-auto; /* Example of custom styles */
+  }
+}

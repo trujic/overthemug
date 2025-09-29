@@ -1,0 +1,7 @@
+/* Noto serif display - za naslove, sloop script pro - ukrasni, podnaslovi - open sauce regular, paragraph - cormorant garamond */
+@font-face {
+  font-family: 'Sloop Script';
+  src: url('/Sloop-Script-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
