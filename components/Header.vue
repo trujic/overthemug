@@ -1,5 +1,5 @@
 <template>
-  <header class="relative bg-white">
+  <header class="fixed bg-white z-30 w-full">
     <div class="container-wide flex items-center justify-center w-full h-16">
       <NuxtLink to="/" class="hover:cursor-pointer">
         <img src="~/assets/images/logo.png" class="w-[160px]" />

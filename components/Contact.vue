@@ -15,18 +15,18 @@ const form = reactive({
 
 <template>
   <div class="container-wide relative pb-40">
-    <img :src="eagle" class="absolute w-40 right-[360px] top-[-100px] z-30" />
     <form
       name="contact"
       method="POST"
       data-netlify="true"
-      class="relative max-w-2xl mx-auto p-14 border space-y-10 bg-white mt-[-120px] z-20"
+      class="relative max-w-2xl mx-auto p-14 border space-y-10 bg-white mt-[-100px] z-20"
+      netlify
     >
       <input type="hidden" name="form-name" value="contact" />
 
       <!-- NAME -->
       <div>
-        <label class="block mb-1 uppercase font-openSauce">
+        <label class="block mb-1 uppercase font-openSauce font-light">
           Name and surname <span class="text-red-500">*</span>
         </label>
         <input
@@ -117,7 +117,7 @@ const form = reactive({
     </form>
     <img
       :src="envelope"
-      class="w-[900px] absolute top-[200px] ml-auto mr-auto left-0 right-0 text-center z-2"
+      class="w-[1100px] absolute top-0 ml-auto mr-auto left-0 right-0 text-center z-2"
     />
   </div>
 </template>

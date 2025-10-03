@@ -2,8 +2,9 @@
   <div class="bg-white">
     <Hero />
     <ExploreOurServices />
-    <LatestProjects />
+    <OurMission />
     <Testimonials />
+    <LatestProjects />
     <Contact />
   </div>
 </template>

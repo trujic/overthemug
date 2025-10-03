@@ -4,6 +4,10 @@
 
 @layer components {
   .container-wide {
-    @apply max-w-[1540px] m-auto; /* Example of custom styles */
+    @apply px-4 md:px-0 max-w-[1780px] m-auto; /* Example of custom styles */
   }
+}
+
+main {
+  @apply mt-16;
 }

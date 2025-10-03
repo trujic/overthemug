@@ -12,15 +12,17 @@ const toggleDropdown = (index) => {
 <template>
   <div class="border-b border-black">
     <div
-      class="py-40 container-wide flex flex-row-reverse gap-40 w-full justify-between"
+      class="py-10 md:py-40 container-wide md:flex md:flex-row-reverse md:gap-40 w-full justify-between"
     >
       <!-- Tekst + dropdown -->
-      <div class="basis-1/2 flex flex-col justify-between pr-6 pb-20">
-        <div class="ml-20">
-          <h4 class="uppercase font-cormorant text-xl mt-20">
+      <div class="basis-1/2 flex flex-col justify-between md:pr-6 md:pb-20">
+        <div class="text-center md:text-start mb-10 md:mb-0">
+          <h4 class="uppercase font-cormorant text-xl md:mt-20">
             Explore our services
           </h4>
-          <span class="font-signature font-bold ml-14">
+          <span
+            class="font-signature font-medium tracking-[-3px] md:ml-14 text-4xl"
+          >
             carefully crafted, deeply rooted
           </span>
         </div>
@@ -31,7 +33,7 @@ const toggleDropdown = (index) => {
             :isOpen="openIndex === 0"
             @toggle="toggleDropdown(0)"
           >
-            <p class="font-openSauce">
+            <p class="font-cormorant font-extralight italic text-xl pb-6">
               Our studio provides customized branding packages designed
               specifically for your business requirements. We craft visually
               appealing branding that not only attracts customers but also
@@ -47,7 +49,7 @@ const toggleDropdown = (index) => {
             :isOpen="openIndex === 1"
             @toggle="toggleDropdown(1)"
           >
-            <p class="font-openSauce">
+            <p class="font-cormorant font-extralight italic text-xl pb-6">
               Social Media Management is the consistent and daily effort to
               handle your various social platforms. Our focus is on executing
               your unique strategy and maintaining your preferred aesthetics. By
@@ -62,7 +64,7 @@ const toggleDropdown = (index) => {
             :isOpen="openIndex === 2"
             @toggle="toggleDropdown(2)"
           >
-            <p class="font-openSauce">
+            <p class="font-cormorant font-extralight italic text-xl pb-6">
               Our studio creates modern, functional, and aesthetically refined
               websites tailored to your brand’s identity. We focus on delivering
               a seamless user experience, ensuring your website not only looks
@@ -78,16 +80,16 @@ const toggleDropdown = (index) => {
       </div>
 
       <!-- Slike -->
-      <div class="relative basis-1/2">
+      <div class="relative basis-1/2 hidden md:block">
         <img
-          src="~/assets/images/rocks.png"
+          src="~/assets/images/banner.png"
           alt="Decorative mirror"
           class="h-full object-cover relative z-10 pl-28"
         />
         <img
-          src="~/assets/images/envelopekc.png"
+          src="~/assets/images/flower.png"
           alt="Woman in field"
-          class="h-[400px] w-[340px] object-cover absolute top-24 left-0 z-10"
+          class="h-[400px] w-[340px] object-cover absolute top-60 left-0 z-10"
         />
       </div>
     </div>

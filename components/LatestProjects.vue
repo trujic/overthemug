@@ -1,34 +1,42 @@
 <script setup>
-import card1 from "~/assets/images/istrience-card.png";
-import card2 from "~/assets/images/menwa-card.png";
-import card3 from "~/assets/images/bliss-properties-card.png";
+import bgImage from "~/assets/images/projects-bg.png";
+import card1 from "~/assets/images/bliss-properties-card.png";
+import card2 from "~/assets/images/istrience-card.png";
+
+// inline style object
+const bg = {
+  backgroundImage: `url(${bgImage})`,
+  backgroundSize: "cover", // makes it cover the whole container
+  backgroundPosition: "center", // centers the image
+  backgroundRepeat: "no-repeat", // prevents tiling
+};
 </script>
 
 <template>
-  <div class="border-b py-40">
+  <div class="border-b py-10 md:py-40" :style="bg">
     <div class="container-wide w-full">
-      <div class="grid grid-cols-3 gap-4">
-        <div>
-          <span class="text-2xl">( 01 )</span>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-14 max-w-[1000px] m-auto">
+        <NuxtLink to="/projects/bliss-properties" class="hover:cursor-pointer">
           <img
             :src="card1"
-            class="w-full h-[620px] object-cover border border-black p-2 mt-4"
+            class="w-full h-[320px] md:h-[620px] object-cover mb-6"
           />
-        </div>
-        <div>
-          <span class="text-2xl">( 02 )</span>
+          <span class="uppercase text-white text-xl"
+            >01 / branding project</span
+          >
+        </NuxtLink>
+        <NuxtLink
+          to="/projects/istrience-collective"
+          class="hover:cursor-pointer"
+        >
           <img
             :src="card2"
-            class="w-full h-[620px] object-cover border border-black p-2 mt-4"
+            class="w-full h-[320px] md:h-[620px] object-cover mb-6"
           />
-        </div>
-        <div>
-          <span class="text-2xl">( 03 )</span>
-          <img
-            :src="card3"
-            class="w-full h-[620px] object-cover border border-black p-2 mt-4"
-          />
-        </div>
+          <span class="uppercase text-white mt-6 text-xl"
+            >02 / branding & web project</span
+          >
+        </NuxtLink>
       </div>
     </div>
   </div>

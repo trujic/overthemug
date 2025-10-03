@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       {
         name: 'Open Sauce Sans',
         provider: 'fontsource',
-        weights: [400],
+        weights: [300, 400, 500, 600, 700, 800, 900],
       },
     ],
   },

@@ -13,7 +13,7 @@ const emits = defineEmits(["toggle"]);
       @click="$emit('toggle')"
       class="w-full py-4 flex justify-between items-center"
     >
-      <h3 class="text-3xl font-extralight uppercase font-cormorant">
+      <h3 class="text-5xl font-extralight uppercase font-cormorant">
         {{ title }}
       </h3>
       <Icon
@@ -27,7 +27,10 @@ const emits = defineEmits(["toggle"]);
     </button>
 
     <transition name="fade">
-      <div v-if="isOpen" class="p-4 text-lg font-light text-gray-700">
+      <div
+        v-if="isOpen"
+        class="py-4 text-lg font-light text-gray-700 max-w-[680px]"
+      >
         <slot />
       </div>
     </transition>
