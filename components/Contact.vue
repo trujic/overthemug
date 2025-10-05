@@ -15,12 +15,21 @@ const form = reactive({
 
 <template>
   <div class="container-wide relative pb-40">
+    <form name="contact" method="POST" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="instagram" />
+      <input type="text" name="aboutBrand" />
+      <input type="text" name="services" />
+      <textarea name="message"></textarea>
+    </form>
     <form
       name="contact"
-      method="POST"
+      method="post"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
       class="relative max-w-2xl mx-auto p-14 border space-y-10 bg-white mt-[-100px] z-20"
-      netlify
     >
       <input type="hidden" name="form-name" value="contact" />
 

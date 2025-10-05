@@ -1,15 +1,24 @@
 <script setup>
-import bgImage from "~/assets/images/mission-bg.png";
-import bgImage2 from "~/assets/images/projects-bg.png";
+import bgImage from "~/assets/images/projects/bliss-properties/bg.png";
+import bgImage2 from "~/assets/images/projects/bliss-properties/bg2.png";
+import room from "~/assets/images/projects/bliss-properties/room.jpg";
+import room2 from "~/assets/images/projects/bliss-properties/room2.jpg";
+import pillows from "~/assets/images/projects/bliss-properties/pillows.jpg";
+import bp from "~/assets/images/projects/bliss-properties/bp.png";
+import seal from "~/assets/images/projects/bliss-properties/bp-seal.png";
+import blissCircle from "~/assets/images/projects/bliss-properties/bliss-circle.jpg";
+import envelopes from "~/assets/images/projects/bliss-properties/envelopes.png";
+import house from "~/assets/images/projects/bliss-properties/bliss-house.png";
 import rocks from "~/assets/images/rocks.png";
-import menwaCard from "~/assets/images/menwa-card.png";
+import blissCard from "~/assets/images/bliss-properties-card.png";
 import istrienceCard from "~/assets/images/istrience-card.png";
+import video from "~/assets/images/projects/bliss-properties/video.mp4";
 
 // inline style object
 const bg = {
   backgroundImage: `url(${bgImage})`,
   backgroundSize: "cover", // makes it cover the whole container
-  backgroundPosition: "center", // centers the image
+  backgroundPosition: "50% 75%", // centers the image
   backgroundRepeat: "no-repeat", // prevents tiling
 };
 
@@ -23,56 +32,67 @@ const bg2 = {
 </script>
 <template>
   <div class="bg-white">
-    <div :style="bg" class="h-[700px]">
-      <h2>Bliss Properties</h2>
-    </div>
-    <div class="grid grid-cols-2 max-w-[1100px] gap-14 m-auto py-20">
-      <img :src="rocks" class="h-full" />
-      <div class="flex flex-col gap-6">
-        <p class="font-cormorant text-xl">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, ea.
-          Eligendi, illum ut. Alias, quis facere! Architecto quae perferendis ut
-          eaque eum, consectetur autem facere odit adipisci quasi laudantium at.
+    <div :style="bg" class="h-[700px]"></div>
+    <div class="grid grid-cols-2 max-w-[1000px] gap-14 m-auto py-20">
+      <div class="h-[700px]">
+        <img :src="house" class="h-full w-full object-cover" />
+      </div>
+      <div class="flex flex-col gap-6 h-[700px]">
+        <p class="font-cormorant text-xl italic">
+          Bliss Properties is a real estate agency that connects buyers and
+          sellers, offering complete support — from valuation to contract — and
+          managing every detail for a seamless buying, selling, or renting
+          experience.
         </p>
-        <img :src="menwaCard" class="p-4 border w-full" />
+        <img
+          :src="blissCard"
+          class="p-4 border w-full h-full overflow-hidden"
+        />
       </div>
     </div>
     <div :style="bg2" class="h-[600px]"></div>
     <div class="grid grid-cols-2 max-w-[1100px] gap-14 m-auto py-20">
-      <img :src="rocks" class="h-full" />
-      <div class="self-end mb-6">
+      <img :src="room2" class="h-[700px]" />
+      <div class="self-end flex flex-col gap-2 italic mb-6">
         <div class="flex font-cormorant gap-10 font-thin">
-          <span>/01</span>
-          <span class="text-3xl uppercase font-thin">timeless</span>
+          <span>/ 01</span>
+          <span class="text-3xl uppercase font-thin">reliable</span>
         </div>
         <div class="flex font-cormorant gap-10 font-thin">
-          <span>/02</span>
-          <span class="text-3xl font-thin">timeless</span>
+          <span>/ 02</span>
+          <span class="text-3xl font-thin font-pinyon">comprehensive</span>
         </div>
         <div class="flex font-cormorant gap-10">
-          <span>/03</span>
-          <span class="text-3xl uppercase font-thin">timeless</span>
+          <span>/ 03</span>
+          <span class="text-3xl uppercase font-thin">efficient</span>
         </div>
         <div class="flex font-cormorant gap-10">
-          <span>/04</span>
-          <span class="text-3xl font-thin">timeless</span>
+          <span>/ 04</span>
+          <span class="text-3xl font-thin font-pinyon">personalized</span>
         </div>
         <div class="flex font-cormorant gap-10">
-          <span>/05</span>
-          <span class="text-3xl uppercase font-thin">timeless</span>
+          <span>/ 05</span>
+          <span class="text-3xl uppercase font-thin">trustworthy</span>
         </div>
       </div>
     </div>
     <div
       class="grid grid-cols-[1.15fr_0.85fr] max-w-[1100px] gap-14 m-auto py-10"
     >
-      <img :src="rocks" />
-      <img :src="menwaCard" class="h-full object-cover" />
+      <img :src="envelopes" class="h-[700px] w-full object-cover" />
+      <video
+        :src="video"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="h-[700px] w-full p-[10px] border"
+      ></video>
     </div>
-    <div class="grid grid-cols-3 gap-4 h-[600px] mx-6">
-      <img :src="rocks" class="w-full h-full object-cover" />
-      <img :src="menwaCard" class="w-full h-full object-cover" />
-      <img :src="istrienceCard" class="w-full h-full object-cover" />
+    <div class="grid grid-cols-3 gap-4 mx-6 pb-10">
+      <img :src="envelopes" class="w-full h-[700px] object-cover" />
+      <img :src="seal" class="h-[700px] w-full object-cover" />
+      <img :src="istrienceCard" class="w-full h-[700px] object-cover" />
     </div>
   </div>
 </template>
