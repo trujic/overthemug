@@ -12,18 +12,22 @@ const bg = {
 </script>
 
 <template>
-  <div :style="bg" class="w-full h-[740px]">
+  <div :style="bg" class="w-full h-[450px] md:h-[740px] p-6 md:p-0">
     <div
-      class="relative float-right top-1/2 -translate-y-1/2 mr-80 max-w-[450px]"
+      class="relative md:float-right top-1/2 -translate-y-1/2 mr-auto md:mr-80 max-w-[450px]"
     >
-      <h2 class="uppercase mb-6 font-openSauce text-3xl">Our Mission</h2>
-      <p class="font-cormorant text-xl">
+      <h2
+        class="uppercase mb-6 font-openSauce text-2xl md:text-3xl text-center md:text-start"
+      >
+        Our Mission
+      </h2>
+      <p class="font-cormorant text-xl text-center md:text-start">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad ducimus
         ea possimus vitae temporibus hic, praesentium unde accusantium ut autem
         quam iste ab dolore reprehenderit nihil doloribus velit dolores?
       </p>
       <span
-        class="relative font-pinyon tracking-[5px] font-bold float-right z-40 text-3xl mt-6 mr-[-80px]"
+        class="relative font-pinyon tracking-[5px] font-bold float-right z-40 text-2xl md:text-3xl mt-6 md:mr-[-80px]"
       >
         — Lidija
       </span>

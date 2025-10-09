@@ -35,14 +35,14 @@ const prev = () => {
 </script>
 
 <template>
-  <div class="p-0 md:p-10 text-center py-10 md:py-40 border-b">
-    <h2 class="text-4xl mb-6 font-pinyon tracking-[5px] font-bold">
+  <div class="p-0 md:p-10 text-center py-10 md:py-40 border-b px-6 md:px-0">
+    <h2 class="text-xl md:text-4xl mb-6 font-pinyon tracking-[5px] font-bold">
       ( love words from clients )
     </h2>
 
     <div class="flex items-center justify-center">
       <div class="max-w-full md:max-w-5xl">
-        <div class="flex items-center justify-center gap-10 md:gap-40">
+        <div class="flex items-center justify-center gap-2 md:gap-40">
           <Icon
             @click="prev"
             name="material-symbols-light:arrow-back-ios-rounded"

@@ -13,7 +13,7 @@ const emits = defineEmits(["toggle"]);
       @click="$emit('toggle')"
       class="w-full py-4 flex justify-between items-center"
     >
-      <h3 class="text-5xl font-extralight uppercase font-cormorant">
+      <h3 class="text-2xl md:text-5xl font-extralight uppercase font-cormorant">
         {{ title }}
       </h3>
       <Icon

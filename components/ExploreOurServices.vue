@@ -21,7 +21,7 @@ const toggleDropdown = (index) => {
             Explore our services
           </h4>
           <span
-            class="font-signature font-medium tracking-[-3px] md:ml-14 text-4xl"
+            class="font-signature font-medium tracking-[-2px] md:ml-14 text-2xl md:text-4xl"
           >
             carefully crafted, deeply rooted
           </span>

@@ -1,12 +1,12 @@
 <template>
-  <div class="relative w-full h-[800px] overflow-hidden">
+  <div class="relative w-full h-[300px] md:h-[800px] overflow-hidden">
     <video
       :src="video"
       autoplay
       muted
       loop
       playsinline
-      class="absolute top-0 left-0 w-screen h-[800px] object-cover z-0"
+      class="absolute top-0 left-0 w-screen h-[300px] md:h-[800px] object-cover z-0"
     ></video>
 
     <div

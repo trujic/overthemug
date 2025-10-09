@@ -13,9 +13,11 @@ const bg = {
 </script>
 
 <template>
-  <div class="border-b py-10 md:py-40" :style="bg">
+  <div class="border-b py-16 md:py-40" :style="bg">
     <div class="container-wide w-full">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-14 max-w-[1000px] m-auto">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 max-w-[1000px] m-auto"
+      >
         <NuxtLink to="/projects/bliss-properties" class="hover:cursor-pointer">
           <img
             :src="card1"

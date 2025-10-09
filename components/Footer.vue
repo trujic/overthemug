@@ -11,12 +11,12 @@ const finalPosts = computed(() => {
 if (error.value) {
   console.error("Failed to load Instagram feed:", error.value);
 }
-
-console.log(posts.value);
 </script>
 
 <template>
-  <footer class="bg-dark-green min-h-[500px] pt-[350px] pb-[60px]">
+  <footer
+    class="bg-dark-green min-h-[500px] pt-[200px] md:pt-[350px] pb-[60px]"
+  >
     <div class="flex flex-wrap justify-center gap-4 mb-12">
       <div
         v-for="post in finalPosts"
@@ -39,7 +39,6 @@ console.log(posts.value);
             class="object-cover w-full h-full"
             :src="post.thumbnail_url"
           />
-          <!-- <source :src="post.media_url" type="video/mp4" /> -->
         </a>
       </div>
     </div>
@@ -50,7 +49,7 @@ console.log(posts.value);
         href="https://instagram.com/overthemug"
         target="_blank"
         rel="noopener"
-        class="underline hover:text-green-300 transition"
+        class="underline transition"
       >
         Instagram
       </a>

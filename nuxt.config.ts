@@ -23,4 +23,9 @@ export default defineNuxtConfig({
       },
     ],
   },
+  runtimeConfig: {
+    public: {
+      brevoApiKey: process.env.BREVO_API_KEY 
+    }
+  },
 })
